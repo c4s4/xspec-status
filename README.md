@@ -27,8 +27,8 @@ To check Xspec test suite success, you must pass XML Xspec test result files on
 command line. Thus, you might run:
 
     $ xspec-status xspec/*-result.xml
-    Parsing report file 'build/xspec/main-result.xml'...
-    Parsing report file 'build/xspec/meta-result.xml'...
+    Parsing report file 'build/xspec/main-result.xml'
+    Parsing report file 'build/xspec/meta-result.xml'
     Errors: 0
 
 This will print parsed files, the number of errors and will exit with the
