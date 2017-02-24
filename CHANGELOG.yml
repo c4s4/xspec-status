@@ -1,5 +1,11 @@
 # Semantic Changelog (http://github.com/c4s4/changelog)
 
+- version: 1.0.1
+  date:    2017-02-24
+  summary: Bug fix
+  fixed:
+  - "Fixed parsing of pending tests."
+
 - version: 1.0.0
   date:    2017-02-23
   summary: First release
