@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:/home/casa/doc/els/xspec/src/compiler/format-xspec-report.xsl"?>
+<x:report xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:test="http://www.jenitennison.com/xslt/unit-test"
+          xmlns:x="http://www.jenitennison.com/xslt/xspec"
+          stylesheet="file:stylesheet.xsl"
+          date="2017-02-24T17:20:26.863+01:00">
+   <x:scenario>
+      <x:label>Success</x:label>
+      <x:context>
+		<foo/>
+      </x:context>
+      <x:result>
+		<bar/>
+      </x:result>
+      <x:test successful="true">
+         <x:label/>
+         <x:result>
+			<bar/>
+         </x:result>
+         <x:expect>
+			<bar/>
+         </x:expect>
+      </x:test>
+   </x:scenario>
+   <x:scenario>
+      <x:label>Failure</x:label>
+      <x:context>
+		<foo/>
+      </x:context>
+      <x:result>
+		<bar/>
+      </x:result>
+      <x:test successful="false">
+         <x:label/>
+         <x:result>
+			<bar/>
+         </x:result>
+         <x:expect>
+			<egg/>
+         </x:expect>
+      </x:test>
+   </x:scenario>
+   <x:scenario>
+      <x:label>Pending</x:label>
+      <x:context>
+		<foo/>
+      </x:context>
+      <x:test pending="">
+         <x:label/>
+      </x:test>
+   </x:scenario>
+</x:report>

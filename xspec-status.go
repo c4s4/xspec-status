@@ -10,7 +10,7 @@ import (
 )
 
 type Test struct {
-	Success bool `xml:"successful,attr"`
+	Success string `xml:"successful,attr"`
 }
 
 type Scenario struct {
@@ -29,7 +29,7 @@ type Report struct {
 func (r *Report) Errors() int {
 	errors := 0
 	for _, scenario := range r.Scenarios {
-		if !scenario.Test.Success {
+		if scenario.Test.Success == "false" {
 			errors++
 		}
 	}
