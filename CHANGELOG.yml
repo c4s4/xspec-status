@@ -1,5 +1,9 @@
 # Semantic Changelog (http://github.com/c4s4/changelog)
 
+- version: 1.0.2
+  date:    2017-07-11
+  summary: Added integration test
+
 - version: 1.0.1
   date:    2017-02-24
   summary: Bug fix
