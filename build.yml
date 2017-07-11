@@ -4,7 +4,7 @@ extends: c4s4/build/go-tool.yml
 
 targets:
 
-  run:
+  test:
     doc: Run integration test
     steps:
     - script: 'failure = false'
